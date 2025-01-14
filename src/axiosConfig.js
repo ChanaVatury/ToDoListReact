@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from 'axios';//
 
 // הגדרת כתובת הבסיס ל-API
 const apiClient = axios.create({
-  baseURL: "http://localhost:5045", 
+  baseURL: process.env.REACT_APP_API_URL, 
   headers: {
     "Content-Type": "application/json", // הגדרת כותרת ברירת מחדל
   },
